@@ -1,0 +1,357 @@
+*{
+	color: inherit;
+	font-size: inherit;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: ubuntu, sans-serif;
+	margin: 0;
+	padding: 0;
+	scrollbar-width: thin;
+	scrollbar-color: #e51459 #7615E6ee ;
+}
+
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px #222;
+	background-color: #7615E6ee;
+}
+
+*::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #e51459;
+	border: 2px solid #333;
+}
+
+
+/*
+COLORS*******************************************************************
+*/
+.bg-gradient{background-image: linear-gradient(70deg, #e51459, #7615E6);}
+.new_bg_gradient{background-image: linear-gradient(70deg, #b636d9, #7615E6);}
+.bg-gradient2{background-image: linear-gradient(#F6F8FF, #b79fba);}
+.bg-gradient3{background-image: linear-gradient(120deg, #1c2321, #1c2321, #3c175f, #1c2321, #1c2321);}
+.new_bg_gradient3{background-image: linear-gradient(120deg, #1c2321, #1c2321, #20175f, #1c2321, #1c2321);}
+.new_bg_gradient4{background-image: linear-gradient(120deg, #1c2321, #1c2321, #531f83, #1c2321, #1c2321);}
+.pink-text{color: #e51459;}
+.pink-bg{background-color: #e51459;}
+.purple-text{color: #7615e6;}
+.purple-bg{background-color: #7615e6;}
+.silver-text{color: #F6F8FF;}
+.silver-bg{background-color: #F6F8FF;}
+.gray-text{color: #50514f;}
+.gray-bg{background-color: #50514f;}
+.darkgray-text{color: #1c2321;}
+.darkgray-bg{background-color: #1c2321;}
+.azure-text{color: #F2FDFF;}
+.azure-bg{background-color: #F2FDFF;}
+.purplegrape-text{color: #B79FBA;}
+.purplegrape-bg{background-color: #b79fba;}
+.yellow-text{color: #ECD444;}
+.blue-text{color: #1098F7;}
+.black-text{color: #000;}
+/*
+COLORS*******************************************************************
+*/
+
+/*
+FONT-SIZE*******************************************************************
+*/
+.ttext{font-size: 1rem;}
+.stext{font-size: 1.2rem;}
+.mtext{font-size: 1.7rem;}
+.ltext{font-size: 2rem;}
+.xltext{font-size: 2.7rem;}
+.xxltext{font-size: 3.7rem;}
+/*
+FONT-SIZE*******************************************************************
+*/
+
+/*
+PADDING*******************************************************************
+*/
+.tpadding{padding: 1rem;}
+.spadding{padding: 2rem;}
+.mpadding{padding: 3rem;}
+.lpadding{padding: 4rem;}
+.xlpadding{padding: 5rem;}
+.xxlpadding{padding: 7rem;}
+/*
+PADDING*******************************************************************
+*/
+
+/*
+LOGO*******************************************************************
+*/
+.volnews_logo{
+}
+#header_logo{
+	width: 14rem;
+}
+#header_logo .volnews_path, #header_logo .volnews_txt{
+	fill: #fff;
+}
+/*
+LOGO*******************************************************************
+*/
+
+/*
+EFFECTS*******************************************************************
+*/
+.link-fx:hover{color: #ECD444;}
+
+/*
+EFFECTS*******************************************************************
+*/
+
+/*
+icons*******************************************************************
+*/
+.hmenu_icon_cont{
+	width: 2rem;
+}
+.hmenu_icon_fill{
+	fill: #F6F8FF;
+}
+.hmenu_icon_cont:hover .hmenu_icon_fill{
+	fill: #B79FBA;
+}
+/*
+icons*******************************************************************
+*/
+
+.btn{
+	cursor: pointer;
+	color: #1c2321;
+	font-weight: 900;
+	border: 2px solid #1c2321;
+	margin: 2rem 0 0 0;
+
+}
+.btn:focus{cursor: pointer;}
+.btn:active{
+	background-color: transparent;
+	color: #F6F8FF;
+	border: 2px solid #F6F8FF;
+}
+
+
+
+
+
+
+
+
+header{
+	position: sticky;
+	top: 0;
+	color: #fff;
+	padding: 2rem;
+	/*overflow: hidden;*/
+	z-index: 5;
+	border-radius: 0 0 20px 20px;
+}
+
+#title-cont{
+	display: flex;
+	justify-content: space-between;
+}
+#nav-trigger{cursor: pointer;}
+
+#nav-cont{
+	margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+#nav-cont a{
+	flex-basis: 50px;
+	margin: 1rem;
+}
+
+#categories{
+	display: none;
+	position: absolute;
+	z-index: 6;
+}
+
+.category_element:hover{
+	text-decoration: underline;
+}
+
+
+aside{
+	display: none;
+/*	position: absolute;
+	z-index: 2;*/
+}
+
+#mycont{
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+}
+
+section{
+	margin: 4rem 0;
+	border-radius: 10px;
+}
+
+.news_date{
+	text-align: right;
+}
+
+.sec_cont{
+	border-radius: 0 0 10px 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sec_cont img{
+	position: relative;
+	width: 100%;
+	grid-column: 1/4;
+	grid-row: 1/4;
+}
+.sec_cont div{
+	grid-column: 1;
+	grid-row: 4;
+}
+.sec_cont p{
+	grid-column: 1/4;
+	grid-row: 5;
+	text-align: justify;
+}
+.sec_cont a{
+	grid-column: 2/4;
+	grid-row: 6;
+	text-align: right;
+}
+
+textarea{
+	position: relative;
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	min-height: 10rem;
+	cursor: pointer;
+}
+input{
+	position: relative;
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+textarea:focus, input:focus{cursor: auto;}
+
+footer{
+	padding: 4rem 2rem;
+}
+footer ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+	margin: 3rem auto;
+	max-width: 750px;
+}
+footer ul li{
+	text-align: center;
+}
+.footer_icon{
+	fill: #333;
+}
+#admin_btn{
+	position: relative;
+	min-height: 2rem;
+	width: 100%;
+	cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*ADD FOOTER MEDIA QUERYS*/
+
+
+@media(min-width: 700px){
+	header{
+		border-radius: 0;
+	}
+
+	#nav-cont a {
+	    flex-basis: 100px;
+	    font-size: 2rem;
+	}
+
+	#mycont{
+		padding: 4rem;
+	}
+	section {
+	    margin: 7rem 0;
+	}
+	.sec_cont img {
+	    grid-column: 1/3;
+	    grid-row: 1/4;
+	}
+	.sec_cont div {
+	    grid-column: 3;
+	    grid-row: 2;
+	    text-align: right;
+	}
+
+	.sec_cont p {
+	    grid-column: 1/4;
+	    grid-row: 4;
+	    padding: 2rem 0;
+	}
+
+
+}
+
+@media(min-width: 1000px){
+
+
+	#nav-cont a {
+	    flex-basis: 100px;
+	    font-size: 1.5rem;
+	}
+
+	#mycont{
+		padding: 7rem;
+	}
+	section {
+	    margin: 7rem auto;
+	    max-width: 1000px;
+	}
+	.sec_cont img {
+	    grid-column: 1/3;
+	    grid-row: 1/4;
+	}
+	.sec_cont div {
+	    grid-column: 3;
+	    grid-row: 2;
+	    text-align: right;
+	}
+
+	.sec_cont p {
+	    grid-column: 1/4;
+	    grid-row: 4;
+	    padding: 2rem 0;
+	}
+}
